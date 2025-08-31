@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RuskyGames</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #ff6a00;
+      padding: 30px;
+      text-align: center;
+      font-size: 2.8em;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      letter-spacing: 2px;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      width: 100%;
+      max-width: 1400px;
+      margin: auto;
+      flex: 1;
+    }
+
+    .game-card {
+      background: #1e1e1e;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 106, 0, 0.6);
+    }
+
+    .game-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      background: #333;
+    }
+
+    .game-title {
+      text-align: center;
+      padding: 15px;
+      font-size: 1.2em;
+      color: #ffb347;
+      font-weight: bold;
+      background-color: #1e1e1e;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #888;
+      text-align: center;
+      padding: 15px;
+      font-size: 1em;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>🎮 RuskyGames</header>
+
+  <div class="game-grid">
+    <div class="game-card" onclick="location.href='tic-tac-toe.html'">
+      <img class="game-image" src="https://tictactoefree.com/img/tictactoe_3_3_board.png" alt="Tres en Raya">
+      <div class="game-title">Tres En Raya</div>
+    </div>
+
+    <div class="game-card" onclick="location.href='tetris.html'">
+      <img class="game-image" src="https://as1.ftcdn.net/jpg/02/44/66/64/1000_F_244666489_NV7K6OK24CZsNLxCgWUHpGdPuukN3YIH.webp" alt="Tetri">
+      <div class="game-title">Tetri</div>
+    </div>
+
+    <div class="game-card" onclick="location.href='mini_car_game.html'">
+      <img class="game-image" src="https://static.vecteezy.com/system/resources/previews/048/514/991/non_2x/car-racing-logo-with-speedometer-race-car-and-checkered-flag-vector.jpg" alt="Coche">
+      <div class="game-title">Coche</div>
+    </div>
+
+    <div class="game-card" onclick="location.href='Snakegame.html'">
+      <img class="game-image" src="https://static.vecteezy.com/system/resources/previews/006/423/237/non_2x/snake-head-icon-or-logo-in-a-circle-for-company-community-and-more-free-vector.jpg" alt="Snake">
+      <div class="game-title">Snake</div>
+    </div>
+
+    <div class="game-card" onclick="location.href='GeometryDash.html'">
+      <img class="game-image" src="https://static.wikia.nocookie.net/logopedia/images/0/07/Geometry_Dash_Lite_Icon.png/revision/latest?cb=20241120214012&path-prefix=es" alt="Geometry Smash">
+      <div class="game-title">Geometry Smash</div>
+    </div>
+
+    <div class="game-card" onclick="location.href='Getting.html'">
+      <img class="game-image" src="https://play-lh.googleusercontent.com/xEDOZ9oZZrHswGxUR3w55e4XL9nF2r9HQpmpBO2iGsX3EbCstxawIpZB-EykrCPl6c0=s96-rw" alt="Getting Over It">
+      <div class="game-title">Getting Over It</div>
+    </div>
+
+    <div class="game-card" onclick="location.href='1.5.2.html'">
+      <img class="game-image" src="https://images.icon-icons.com/2699/PNG/512/minecraft_logo_icon_168974.png" alt="Minecraft">
+      <div class="game-title">Minecraft</div>
+    </div>
+
+    <div class="game-card" onclick="location.href='doom.html'">
+      <img class="game-image" src="https://images.cults3d.com/LwnAY3M2Wn8tVD0_6qJlFT19P6A=/516x516/filters:no_upscale():format(webp)/https://fbi.cults3d.com/uploaders/35081485/illustration-file/4caf661b-cdb0-464c-a455-9a035b2646c6/png-transparent-doom-ii-final-doom-doom-3-doom-text-logo-video-game.png" alt="DOOM">
+      <div class="game-title">DOOM</div>
+    </div>
+
+    <div class="game-card" onclick="location.href='8ball.html'">
+      <img class="game-image" src="https://img.utdstc.com/icon/48f/e9e/48fe9e97aee96516f030b748f918a376366c9043dc8f3119e2951bd25900a11d:200" alt="8 Ball Pool">
+      <div class="game-title">8 Ball Pool</div>
+    </div>
+  </div>
+
+  <footer>
+    Créditos: Rusky / Olivares / Daniel
+  </footer>
+</body>
+</html>
